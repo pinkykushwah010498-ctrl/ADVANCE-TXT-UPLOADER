@@ -29,7 +29,7 @@ import cloudscraper
 import m3u8
 import core as helper
 from utils import progress_bar
-from vars import API_ID, API_HASH, BOT_TOKEN, DATABASE_URL
+from vars import API_ID, API_HASH, BOT_TOKEN
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
@@ -57,12 +57,6 @@ async def show_random_emojis(message):
 # Define the owner's user ID
 OWNER_ID = 7062964338
 
-# Initialize the database instance globally
-try:
-    db = Database(DATABASE_URL)
-except Exception as e:
-    logging.error(f"Failed to initialize database: {e}")
-    sys.exit(1)
 
 AUTH_CHANNEL = -1002752608747
 
