@@ -9,7 +9,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "") #Replace with your bot token
 
 # Database Configuration for MongoDB
 # Example: "mongodb://user:password@host:port/dbname"
-# For MongoDB Atlas: "mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/<dbname>?retryWrites=true&w=majority"
+# For MongoDB Atlas: "mongodb+srv://gpsiwan_db_user:TcjF1I6JdU6ZGu2s@cluster0.pmyfuf7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DATABASE_URL = environ.get("DATABASE_URL", "mongodb://localhost:27017/your_bot_db")
 # Replace "your_bot_db" with your desired database name.
 # For local testing, you might use "mongodb://localhost:27017/your_bot_db"
